@@ -1,0 +1,20 @@
+{
+  "manifest_version":2,
+  "name": "Youtube I am feeling Lucky",
+  "short_name":"YoutubeFeelingLucky", 
+  "version": "0.1.0",
+  "description" : "Redirects to first video in youtube search result on pressing shift enter in search box or clicking the feeling lucky button",
+  "content_scripts": [
+  {
+    "matches": [
+    "https://www.youtube.com/*",
+    "http://www.youtube.com/*"
+    ],
+    "js" : [
+    "script.js",
+    "client.js"
+    ],
+    "run_at": "document_idle"
+  }
+  ]
+}
