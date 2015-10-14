@@ -23,8 +23,6 @@ function handleClick(e){
 		return;
 	}
 	var value = inputSearch.value;
-	chrome.runtime.sendMessage({'input' : value}, null, function(response) {
-       window.location.href = 'http://www.youtube.com/watch?v='+response.videoId;
-	});
+	chrome.runtime.sendMessage({'input' : value, 'protocol' : location.protocol});
     e.preventDefault();
 }
