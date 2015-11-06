@@ -7,6 +7,7 @@ function init() {
     lButton.dir = button.dir;
     lButton.innerHTML = "I'm feeling lucky!";
     button.parentNode.insertBefore(lButton, button);
+    lButton.style.padding = '2px 2px 2px 2px';
     lButton.onclick = handleClick;
     inputSearch = document.getElementById("masthead-search-term") || document.getElementsByName("search_query")[0];
     inputSearch.onkeydown = function(e){
