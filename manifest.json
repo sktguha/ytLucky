@@ -2,7 +2,7 @@
   "manifest_version":2,
   "name": "Youtube I am feeling Lucky",
   "short_name":"YoutubeFeelingLucky", 
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description" : "Redirects to first video/channel in youtube search result on pressing shift enter in search box or clicking the feeling lucky button",
   "content_scripts": [
   {
