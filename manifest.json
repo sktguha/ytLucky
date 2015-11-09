@@ -1,23 +1,28 @@
 {
-  "manifest_version":2,
-  "name": "Youtube I am feeling Lucky",
-  "short_name":"YoutubeFeelingLucky", 
-  "version": "0.1.4",
-  "description" : "Redirects to first video/channel in youtube search result on pressing shift enter in search box or clicking the feeling lucky button",
-  "content_scripts": [
-  {
-    "matches": [
-    "https://www.youtube.com/*",
-    "http://www.youtube.com/*"
-    ],
-    "js" : [
-    "script.js"
-    ],
-    "run_at": "document_idle"
-  }
-  ],
-  "background": {
-    "page": "background.html"
-  },
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com; object-src 'self'"
+	"manifest_version":2,
+	"name": "Youtube I am feeling Lucky",
+	"short_name":"YoutubeFeelingLucky", 
+	"version": "0.1.5",
+	"description" : "Skip YouTube search results and launch videos instantly. Covered by The Next Web , link- http://tnw.me/eqIGuyP",
+	"content_scripts": [
+	{
+		"matches": [
+		"https://www.youtube.com/*",
+		"http://www.youtube.com/*"
+		],
+		"js" : [
+		"script.js"
+		],
+		"run_at": "document_idle"
+	}
+	],
+	"icons": { 
+		"16" : "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png" 
+	},
+	"background": {
+		"page": "background.html"
+	},
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com; object-src 'self'"
 }
