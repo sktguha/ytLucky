@@ -68,11 +68,10 @@
     function getIntervalFunction(retryLimit, minInterval, maxInterval) {
         var HIGH_INTERVAL = maxInterval || 300000,
             LOW_INTERVAL = (typeof minInterval == "undefined") ? 4000 : maxInterval,
-            RETRY_LIMIT = retryLimit || 10,
             count = 0,
             interval = 0;
         return function () {
-            if(count > RETRY_LIMIT){
+            if(retryLimit && count > retryLimit){
                 return -1;
             }
             interval = LOW_INTERVAL*Math.pow(2, count);
