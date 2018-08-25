@@ -8,7 +8,14 @@ function maxTimes(fn,n, ctx){
 		return lastRes;
 	}
 }
+
+function insertAfter(newNode, referenceNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
 var setTimeout15 = maxTimes(window.setTimeout, 15, window);
+
+
 function init() {
     var button = document.getElementById('search-icon-legacy');
     if(!button) { 
@@ -19,7 +26,7 @@ function init() {
     lButton.className = button.className;
     lButton.dir = button.dir;
     lButton.innerHTML = "I'm feeling lucky!";	
-    button.parentNode.insertBefore(lButton, button);
+    insertAfter(lButton, button);
     lButton.style.padding = '2px 2px 2px 2px';
     lButton.onclick = handleClick;
     inputSearch = document.getElementById("masthead-search-term") || document.getElementsByName("search_query")[0];
