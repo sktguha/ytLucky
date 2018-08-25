@@ -2,7 +2,7 @@
 	"manifest_version":2,
 	"name": "Youtube I am feeling Lucky",
 	"short_name":"YoutubeFeelingLucky", 
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description" : "Skip YouTube search results and launch videos instantly. Covered by The Next Web , link- http://tnw.me/eqIGuyP",
 	"content_scripts": [
 	{
