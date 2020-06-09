@@ -1,4 +1,4 @@
-    var KEY = "AIzaSyCbZXtN7-rCDxlVdmpsv7BBhjYKzGYfrkE";
+    var KEY = "AIzaSyDWvUACVgF-d7943gsCW9-OvPrjGS7pDq8";
     var getInterval = getIntervalFunction();
     attachScript();
     function attachScript(){
@@ -42,6 +42,7 @@
             } else {
                 var videoId = getVideoId(response.items);
                 if(!videoId){
+                    console.error("no video id found in results");
                     return;
                 }
                 url = (protocol || "https:") + "//www.youtube.com/watch?v="+videoId;      
