@@ -1,4 +1,6 @@
 # ytLucky
+NOTE: From chrome webstore the extension is not functional for now :( . you can get it from here and run it in developer mode
+
 Covered by the next web :) http://thenextweb.com/apps/2015/11/06/skip-youtube-search-results-and-launch-videos-instantly-with-this-chrome-extension/<br>
 Also Feautured on Product hunt : https://www.producthunt.com/tech/i-am-feeling-lucky-youtube-extension<br>
 Skip YouTube search results and launch videos instantly.<br><br>
